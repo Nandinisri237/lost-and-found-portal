@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lost&found</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+   <header> 
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa fa-magnifying-glass"></i>
+            </div>
+            <div>
+                <h1>Lost & Found</h1>
+                <p>MVGRCE</p>
+            </div>
+        </div>
+        <button onclick="window.location.href='report.html'">+ Report Found Item</button>
+    </header>
+    <hr>
+    <main>
+        <div class="box">
+            <section>
+                <h2>Lost something on campus?</h2>
+                <p>search our database of found items and get reunited!</p>
+                <input type="text" id="searchInput" placeholder="e.g. black wallet,keys..." >
+                <button class="search-btn" onclick="searchItems()">Search</button>
+            </section>
+            <section>
+                <button class="filter-btn" onclick="filterItems('all')">All</button>
+                <button class="filter-btn" onclick="filterItems('wallet')">Wallets</button>
+                <button class="filter-btn" onclick="filterItems('phone')">Phones</button>
+                <button class="filter-btn" onclick="filterItems('keys')">Keys</button>
+                <button class="filter-btn" onclick="filterItems('other')">Other</button>
+            </section>
+        </div>
+        <section>
+            <h2>Recently found items</h2>
+            <div class="grid">
+                <div class="card" data-category="wallet" onclick="window.location.href='item.html'">
+                    <img src="https://placehold.co/200x150" alt="item image">
+                    <h3>Black Wallet</h3>
+                    <p>found 2 days ago</p>
+                    <p>Found debit and credit cards</p>
+                    <i class="fa fa-phone"></i>
+                    <p>9701353377</p>
+                    <button>Contact Finder</button>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+    <footer>
+        <p>Lost & Found Portal</p>
+        <p>MVGR College Of Engineering</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>

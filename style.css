@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin:20px;
+    
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon{
+    background-color: #1d4ed8;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+button {
+    background-color: white;
+    color:#333;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+h1,p{
+    margin: 0;
+}
+
+.box h2{
+    color: #1d3557;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.box p{
+    color: #1e88e5;
+    font-weight: bold;
+    margin: bottom 20px;
+}
+
+.box{
+    background-color: #eef6ff;
+    padding:30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 750px;
+    margin: 30px auto;
+    text-align: center;
+    
+}
+
+input[type="text"]{
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:6px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    width:90%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+form div{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input{
+    padding: 10px;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width:100%;
+}
+
+.item-container{
+    max-width: 500px;
+    width: 90%;
+    margin:30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    padding:30px;
+}
+
+.filter-btn {
+    margin-top: 15px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px 14px;
+}
+
+.search-btn{
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+button:hover{
+    background-color: #f0f0f0;
+}
+section{
+    margin:20px;
+}
+
+/* Card hover lift */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 4px 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Filter button active state */
+.filter-btn:hover {
+    background-color: #1d4ed8;
+    color: white;
+    border-color: #1d4ed8;
+    transition: 0.2s;
+}
+
+/* Ripple effect */
+.filter-btn {
+    position: relative;
+    overflow: hidden;
+}
+@keyframes ripple {
+    from { transform: scale(0); opacity: 1; }
+    to { transform: scale(2); opacity: 0; }
+}
