@@ -20,7 +20,7 @@ const upload = multer({ storage });
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://nandinisri2303_db_user:Nandu_07@cluster0.6bidyiy.mongodb.net/?appName=Cluster0')
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('MongoDB connected!'))
 .catch((err) => console.log('Error:', err));
 // Route to save item
